@@ -1,5 +1,5 @@
 //
-//  Logo.swift
+//  LogoView.swift
 //  Run
 //
 //  Created by unicred on 13/12/22.
@@ -16,8 +16,14 @@ class Logo: UIImageView {
         // Drawing code
     }
     */
-   override func draw(_ rect: CGRect) {
-	   image = UIImage(systemName: "figure.run")
-	   tintColor = .white
-   }
+	
+	init() {
+		super.init(image: UIImage(systemName: "figure.highintensity.intervaltraining"))
+		self.tintColor = .white
+		self.contentMode = .scaleAspectFit
+	}
+	
+	required init?(coder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
 }

@@ -21,7 +21,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="-2"/>
+            <point key="canvasLocation" x="7" y="-2"/>
+        </scene>
+        <!--Running View Controller-->
+        <scene sceneID="N3l-3g-itI">
+            <objects>
+                <viewController storyboardIdentifier="RunningViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gaD-Ik-DBd" customClass="RunningViewController" customModule="Run" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gFw-KM-cXq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="z9Y-mT-0Ml"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYZ-nR-ykR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797" y="15"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemPinkColor"/>
