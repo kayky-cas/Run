@@ -18,6 +18,7 @@ class RunningViewController: UIViewController {
 	lazy var image: UIImageView = {
 		let image = UIImage.gifImageWithName("running")
 		let imageView = UIImageView(image: image)
+		
 		return imageView
 	}()
 	
@@ -35,13 +36,9 @@ class RunningViewController: UIViewController {
 		let button = UIButton(configuration: UIButton.Configuration.filled())
 		
 		button.setTitle(" Stop", for: .normal)
-		
 		button.setImage(UIImage(systemName: "stop.circle"), for: .normal)
-		
 		button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-		
 		button.titleLabel?.textColor = .systemPink
-		
 		button.addTarget(self, action: #selector(stopCount), for: .touchUpInside)
 		
 		return button
@@ -55,7 +52,7 @@ class RunningViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
+		
 		configView()
 		stopWatch()
 	}
@@ -80,7 +77,6 @@ class RunningViewController: UIViewController {
 		timer.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 		
 		stopButton.anchor(top: timer.bottomAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 40, left: 0, bottom: 0, right: 0), size: .init(width: 100, height: 30))
-		
 		stopButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 		
 	}
@@ -99,11 +95,6 @@ class RunningViewController: UIViewController {
 				}
 			}
 		}
-		//		let dispatchQueue = DispatchQueue(label: "QueueIdentification", qos: .background)
-		//
-		//		dispatchQueue.async{
-		//			DispatchQueue.main.async{ self.count += 1 }
-		//		}
 	}
 	
 	func updateTimer(_ time: UInt32) {

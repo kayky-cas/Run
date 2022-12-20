@@ -85,7 +85,7 @@ class ViewController: UIViewController {
 	
 	func setConstraintsButton() {
 		startButton.anchor(top: titleLabel.bottomAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: -15, left: 0, bottom: 0, right: 0), size: .init(width: 0, height: 50))
-//		startButton.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: nil, bottom: nil, trailing: nil)
+		
 		startButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 	}
 	
@@ -104,8 +104,7 @@ class ViewController: UIViewController {
 			self.board.pushRunning(running)
 			self.board.reloadData()
 		}
-		
+
 		present(running, animated: true)
 	}
 }
-
